@@ -8,28 +8,13 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>チャット2021</h1> 
+  <h1>チャット</h1> 
   <ul id="chats">
     </ul>
     <form id="form">
       <input id="msg" autocomplete="off" /> <button>送信</button>
     </form>
-  <script>
-    const socketio = io();
-    const form = document.getEleme
-    const input = document.getElem
-    const chats = document.getElem
-
-    form.addEventListener('submit'
-      socketio.emit('message', inp
-      input.value='';
-      event.preventDefault();
-    })
-    socketio.on('message',function
-      const li = document.createEl
-      li.append(msg);
-      chats.append(li);
-    });
-  </script>
+  <script src="main.js"></script>
+  
 </body>
 </html>
